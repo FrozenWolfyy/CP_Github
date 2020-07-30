@@ -52,8 +52,8 @@ using namespace std ;
 
 ll countHelper(vector<int> x,int idx){
       ll start=x[idx];
-      int n=x.size();
-      ll end=x[n-1]-x[idx];
+      // int n=x.size();
+      ll end=x.back()-x[idx];
       return (start*end);
 }
 
